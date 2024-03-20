@@ -1,0 +1,6 @@
+torchserve>=0.10.0
+torch-model-archiver>=0.10.0
+torch-workflow-archiver>=0.2.12
+torch>=2.2.1
+torchvision>=0.17.1
+ultralytics>=8.1.29
