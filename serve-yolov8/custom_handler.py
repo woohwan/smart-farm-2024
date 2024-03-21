@@ -39,6 +39,7 @@ class Yolov8Handler(ObjectDetector):
         properties = context.system_properties
         self.manifest = context.manifest
         model_dir = properties.get("model_dir")
+        print("model_dir: ", model_dir)
         self.model_pt_path = None
         if "serializedFile" in self.manifest["model"]:
             serialized_file = self.manifest["model"]["serializedFile"]
