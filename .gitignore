@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# YOLO
+*.pt
+*.mar
+*.torchscript
 logs/
 # Distribution / packaging
 .Python
