@@ -1,0 +1,12 @@
+ultralytics>=8.0.144
+torch
+torchvision
+torchserve 
+torch-model-archiver 
+torch-workflow-archiver
+onnxruntime
+torch-tensorrt
+tensorrt
+pyyaml
+captum
+onnxruntime
