@@ -1,4 +1,16 @@
 from ultralytics import YOLO
-model = YOLO("yolov8_plant.pt")
-results = model.predict("data/V001_tom1_00_061_e_14_20220101_27_06094434_40158887.png")
-print(results[0].save('0.jpeg'))
+
+model = YOLO("yolov8.plant.torchscript")
+results = model(["data/3.png"], imgsz=640)
+
+print(results[0].tojson())
+
+# Process results list
+for result in results:
+    boxes = result.boxes  # Boxes object for bounding box outputs
+    print(boxes)
+    masks = result.masks  # Masks object for segmentation masks outputs
+    keypoints = result.keypoints  # Keypoints object for pose outputs
+    probs = result.probs  # Probs object for classification outputs
+    # result.show()  # display to screen
+    # result.save(filename='result.jpg')  # save to disk
