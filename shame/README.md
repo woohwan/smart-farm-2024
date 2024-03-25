@@ -1,4 +1,10 @@
 ```  
+# only CPU mode
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+
+
+
 # archive
 torch-model-archiver --model-name yolov8 --version 1.0 --serialized-file yolov8_plant.pt --handler custom_handler.py
 

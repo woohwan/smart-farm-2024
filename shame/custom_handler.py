@@ -65,8 +65,9 @@ class Yolov8Handler(ObjectDetector):
 
     def postprocess(self, res):
         output = []
+        print("res: ", res)
         for data in res:
-            print(data)
+            print("data in res: ", data, type(data))
             classes = data.boxes.cls.tolist()
             names = data.names
 
