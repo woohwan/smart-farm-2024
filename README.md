@@ -1,1 +1,1 @@
-# smart-fram-2024
+# smart-farm-2024
