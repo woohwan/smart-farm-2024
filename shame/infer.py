@@ -1,6 +1,7 @@
 from ultralytics import YOLO
 
-model = YOLO("yolov8.plant.torchscript")
+# model = YOLO("yolov8.plant.torchscript", task='detect')
+model = YOLO("model_classfication_plant.pt", task='detect')
 results = model(["data/3.png"], imgsz=640)
 
 print(results[0].tojson())
